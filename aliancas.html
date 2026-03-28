@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monarch Joias</title>
+    <style>
+  header {
+    display:flex;
+    padding:10px 20px;
+    background:white;
+}
+
+.menu{
+    display:flex;
+    margin-left: 25%;
+    align-items: center;
+    
+}
+
+.logo img{
+    height:120px;
+}
+
+.franqueado{
+    font-size:14px;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+    width: 80px;
+    
+}
+.images{
+    width: 90%; display: flex; gap: 10px;
+}
+
+.images img{
+    width: 100%;
+    height: 70px;
+}
+    .sep{
+        display: flex;
+        height: 45px;
+        font-size: 10px;
+        justify-content: center;
+        gap: 10px;
+    }
+      .espa{
+        display: flex;
+        
+      }
+      .separa{
+        font-size: 10px;
+        text-align: center;
+        display: flex;
+        margin: 5%;
+        gap: 10px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        
+      }
+        .footer {
+    background-color: #333;
+    color: #ccc;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 95%;
+   
+    
+  }
+  .titulo {
+    color: yellow;
+    text-align: left;
+  }
+
+  .texto {
+     width: 200px;
+    height: 200px;
+  }
+
+  .filtro {
+
+    display: flex;
+    justify-content: end;
+  }
+    .filtro button {
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        font-size: 12px;
+        color: red;
+        background: none;
+     }
+
+
+    </style>
+</head>
+<body style="margin:auto; width:60%; text-align:center; background-color:#D6C2C7;">
+    <div style="background-color:white;"> 
+ <header>
+
+<div class="logo">
+    <img src="logo.png">
+</div>
+
+<nav class="menu">
+    <a href="home.html"><img src="home.jpg" style=" margin: 30px;" ></a>
+    <div class="images">
+    <a href="aliancas.html"><img src="aliancas.jpg"></a>
+    <a href="noivado.html"><img src="noivado.jpg"></a>
+    <a href="formatura.html"><img src="formatura.jpg"></a>
+    </div>
+</nav>
+
+<div class="franqueado">
+    <p>Seja um Franqueado</p>
+</div>
+</header>
+
+<hr>
+<img src="banner2.jpg" alt="" style="width: 100%;">
+
+ <div class="espa">
+     <img src="joia-logo.jpg" alt="">
+     <p style="color: red;" >
+        ALIANÇAS DE CASAMENTO
+     </p>
+    
+     </div>
+     <form>
+        <input>
+        <button style="background-color: red;">Busca</button>
+        <div class="filtro">
+        <button onclick="ordenar('maior')">MAIOR PREÇO</button>
+        <button onclick="ordenar('menor')">MENOR PREÇO</button>
+        <button onclick="ordenar('vendidos')">MAIS VENDIDOS</button>
+        <button onclick="ordenar('lancamentos')">LANÇAMENTOS</button>
+        </div>
+     </form>
+
+    </body>
+    </html>
